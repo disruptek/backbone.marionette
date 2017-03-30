@@ -13,7 +13,10 @@
     define(['underscore', 'backbone', 'backbone.wreqr', 'backbone.babysitter'], factory);
 
   }
-}(this, function (_, Backbone) {
+}(this, function (_, Backbone, Wreqr, Babysitter) {
+
+  Backbone.Wreqr = Wreqr;
+  Backbone.ChildViewContainer = Babysitter;
 
   // @include marionette.core.js
   return Backbone.Marionette;
